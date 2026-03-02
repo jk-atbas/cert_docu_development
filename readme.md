@@ -124,7 +124,7 @@ private_key     = $dir/private/rootCA.key
 
 default_md      = sha256
 default_crl_days = 36500
-crl             = $dir/atbas-root-crl.crl
+crl             = $dir/atbas-root-ca.crl
 ```
 
 Gültigkeit der CRL ist 100 Jahre
