@@ -119,7 +119,7 @@ database        = $dir/index.txt
 serial          = $dir/serial
 crlnumber       = $dir/crlnumber
 
-certificate     = $dir/rootCA.crt
+certificate     = $dir/private/rootCA.crt
 private_key     = $dir/private/rootCA.key
 
 default_md      = sha256
