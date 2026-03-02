@@ -1,0 +1,19 @@
+[ req ]
+default_bits       = 2048
+distinguished_name = dn
+req_extensions     = v3_req
+prompt             = no
+
+[ dn ]
+CN = web.atbas.de
+
+[ v3_req ]
+basicConstraints = CA:FALSE
+keyUsage = critical, digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth, 1.3.6.1.4.1.311.54.1.2
+subjectAltName = @alt_names
+crlDistributionPoints = URI:http://SRV060.dd.atbas.de:1337/atbas-root-ca.crl
+# authorityInfoAccess = caIssuers;URI:http://SRV060.dd.atbas.de:1337/root-ca.crt
+
+[ alt_names ]
+DNS.1 = web.atbas.de

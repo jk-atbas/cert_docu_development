@@ -1,0 +1,15 @@
+[ ca ]
+default_ca = CA_default
+
+[ CA_default ]
+dir             = .
+database        = $dir/index.txt
+serial          = $dir/serial
+crlnumber       = $dir/crlnumber
+
+certificate     = $dir/private/rootCA.crt
+private_key     = $dir/private/rootCA.key
+
+default_md      = sha256
+default_crl_days = 36500
+crl             = $dir/atbas-root-ca.crl
